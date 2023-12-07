@@ -1,39 +1,35 @@
 function validation() {
-   
-    if (document.Formfill.Username.value == "") {
+    var username = document.Formfill.Username.value;
+    var email = document.Formfill.Email.value;
+    var password = document.Formfill.Password.value;
+    var cpassword = document.Formfill.CPassword.value;
+
+    if (username == "") {
         document.getElementById("result").innerHTML = "Enter Username*";
         return false;
-
-    } else if (document.Formfill.Username.value.length < 6) {
+    } else if (username.length < 6) {
         document.getElementById("result").innerHTML = "At least six letters*";
         return false;
-
-    } else if (document.Formfill.Email.value == "") {
+    } else if (email == "") {
         document.getElementById("result").innerHTML = "Enter your Email*";
         return false;
-
-    } else if (document.Formfill.Password.value == "") {
+    } else if (password == "") {
         document.getElementById("result").innerHTML = "Enter your Password";
         return false;
-
-    } else if (document.Formfill.Password.value.length < 6) {
+    } else if (password.length < 6) {
         document.getElementById("result").innerHTML = "Password must be 6 digits";
         return false;
-
-    } else if (document.Formfill.CPassword.value == "") {
+    } else if (cpassword == "") {
         document.getElementById("result").innerHTML = "Enter Confirm Password";
         return false;
-
-    } else if (document.Formfill.CPassword.value !== document.Formfill.Password.value){
+    } else if (cpassword !== password) {
         document.getElementById("result").innerHTML = "Password doesn't match";
         return false;
-
-    } else if (document.Formfill.Password.value == document.Formfill.CPassword.value) {
-        popup.classList.add("open-slide")
+    } else {
+        CloseSlide();
         return false;
     }
 }
-
 
 var popup = document.getElementById('popup');
 
@@ -43,5 +39,5 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 });
 
 function CloseSlide() {
-    popup.classList.remove("open-slide");
+    popup.classList.add("open-slide");
 }
