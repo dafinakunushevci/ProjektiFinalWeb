@@ -74,7 +74,6 @@ textarea::-webkit-scroll-thumb {
     background: linear-gradient(to right, rgb(88, 87, 87), rgba(235, 27, 27, 0.8));
 }
 
-
 .error {
     color: red;
 }
