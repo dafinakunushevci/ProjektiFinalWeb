@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="form-box">
-            <form action="login.php" method="post" name="Formfill" onsubmit="return validation()">
+            <form action="connection.php" method="post" name="Formfill" onsubmit="return validation()">
                 <h2>Login In</h2>
                 <p id="result"></p>
                 <div class="input-box">

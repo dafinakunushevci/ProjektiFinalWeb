@@ -13,7 +13,7 @@
 
     <div class="container">
         <div class="form-box">
-            <form action="" name="Formfill" id="registrationForm">
+            <form action="login.php" name="Formfill" id="registrationForm">
                 <h2>Register</h2>
                 <p id="result"></p>
                 <div class="input-box">

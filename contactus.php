@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +15,6 @@
     <div id="overlay">
         <form id="contactForm">
             <h1>Contact Us</h1>
-
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Your name">
             <small class="error"></small>
